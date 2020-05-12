@@ -67,7 +67,6 @@ body {
     margin: auto;
     border-right: 2px solid rgba(255, 255, 255, 0.75);
     text-align: center;
-    height: 9vh;
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);
@@ -86,7 +85,7 @@ body {
     text-align: center;
     letter-spacing: -2px;
     line-height: 58px;
-    height: 8vh;
+    height: 9vh;
 }
 
 @media(max-width: 768px) {
