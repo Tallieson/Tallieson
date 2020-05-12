@@ -85,7 +85,6 @@ body {
     text-align: center;
     letter-spacing: -2px;
     line-height: 58px;
-    height: 9vh;
 }
 
 @media(max-width: 768px) {
