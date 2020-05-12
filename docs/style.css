@@ -85,6 +85,7 @@ body {
     text-align: center;
     letter-spacing: -2px;
     line-height: 58px;
+    height: 8vh;
 }
 
 @media(max-width: 768px) {
@@ -140,8 +141,8 @@ body {
     animation: animatop 0.9s cubic-bezier(0.425, 1.14, 0.47, 1.125) forwards;
 }
 .card {
-    width: 97.5vw;
-    min-height: 100px;
+    width: 100vw;
+    height: 25vh;
     padding: 20px;
     border-radius: 3px;
     background-color:  #333;
@@ -149,6 +150,7 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
+    animation: animatop 0.9s cubic-bezier(0.425, 1.14, 0.47, 1.125) forwards;
 }
 .card:after {
     content: '';
@@ -157,25 +159,30 @@ body {
     height: 300px;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     position: absolute;
-    animation: rotatemagic 0.75s cubic-bezier(0.425, 1.04, 0.47, 1.105) 1s both;
+    animation: rotatemagic 0.75s cubic-bezier(0.45, 1.54, 0.47, 1.105) 1s both;
 }
 .badgescard {
     padding: 10px 20px;
     border-radius: 3px;
     background-color: #333;
-    width: 480px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     position: absolute;
-    z-index: -1;
+    z-index: 3;
     left: 10px;
-    bottom: 10px;
+    bottom: 1000px;
     opacity: 0.7;
-    animation: animainfos 0.5s cubic-bezier(0.425, 1.04, 0.47, 1.105) 0.75s forwards;
+    animation: animabadgedrop 0.5s cubic-bezier(0.225, 1.04, 0.47, 1.105) 0.75s forwards;
 }
 .badgescard span {
     font-size: 2.4em;
     margin: 0 6px;
     opacity: 0.8;
+}
+.badgescard span:hover{
+    font-size: 2.6em;
+    transition: all 0.25s ease;
+    background-color: #f2f2f2;
+    color: #333;
 }
 .firstinfo {
     flex-direction: row;
@@ -206,18 +213,18 @@ h5 {
 @keyframes animatop {
     0% {
         opacity: 0;
-        bottom: -400px;
+        bottom: -300px;
    }
     100% {
         opacity: 1;
    }
 }
-@keyframes animainfos {
+@keyframes animabadgedrop {
     0% {
-        bottom: 90px;
+        bottom: 100px;
    }
     100% {
-        bottom: -42px;
+        bottom: 36px;
    }
 }
 @keyframes rotatemagic {
@@ -233,3 +240,31 @@ h5 {
         left: -78px;
    }
 }
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    text-align: end;
+    display: inline;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
