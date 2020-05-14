@@ -11,6 +11,11 @@ html {
 }
 body{
     font-family: 'Open Sans', sans-serif;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        background-attachment:fixed;
+        animation: gradient 8s ease infinite;
+
 }
 /* ----- nav bar ----- */
 #navbar {
@@ -42,11 +47,7 @@ body{
   }
 
   /*----- background ----- */
-body {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 8s ease infinite;
-}
+
 
 @keyframes gradient {
 	0% {
@@ -69,6 +70,7 @@ body {
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
+    height: 8vh;
     transform: translateY(-50%);
 }
 
@@ -84,7 +86,7 @@ body {
     font-weight: lighter;
     text-align: center;
     letter-spacing: -2px;
-    line-height: 58px;
+    line-height: 6vh;
 }
 
 @media(max-width: 768px) {
@@ -127,12 +129,17 @@ body {
     }
 }
 
+/* Project Cards */
+.module{
+    size:400px;
+}
 /* ----- Profile Card ----- */
 
 .badgescard, .firstinfo {
     display: flex;
     justify-content: left;
     align-items: center;
+    position: fixed;
 }
 
 .content {
@@ -164,13 +171,22 @@ body {
     padding: 10px 20px;
     border-radius: 3px;
     background-color: #333;
+    color:linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     position: absolute;
     z-index: 3;
     left: 10px;
     bottom: 1000px;
-    opacity: 0.7;
+    opacity: 0.8;
     animation: animabadgedrop 0.5s cubic-bezier(0.225, 1.04, 0.47, 1.105) 0.75s forwards;
+}
+@keyframes animabadgedrop {
+    0% {
+        bottom: 100px;
+   }
+    100% {
+        bottom: 36px;
+   }
 }
 .badgescard span {
     font-size: 2.4em;
@@ -239,31 +255,3 @@ h5 {
         left: -78px;
    }
 }
-
-/* Style all font awesome icons */
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    text-align: end;
-    display: inline;
-    text-decoration: none;
-  }
-  
-  /* Add a hover effect if you want */
-  .fa:hover {
-    opacity: 0.7;
-  }
-  
-  /* Set a specific color for each brand */
-  
-  /* Facebook */
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-  
-  /* Twitter */
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
