@@ -263,18 +263,6 @@ body {
 	margin-bottom: 1.8em;
 }
 
-.details a, .details a:link, .details a:active{
-		color: rgba(255, 103, 68, 0.91);
-		border: 2px solid rgba(255, 103, 68, 0.91) !important;
-		background-color: #fff;
-}
-
-.details a:hover, .details a:focus {
-		/*box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 14px 1px rgba(0, 0, 0, 0.15);*/
-		background-color: rgba(255, 103, 68, 0.91) !important;
-		color: #fff;
-}
-
 /*** Footer Call-to-action ***/
 #footer-cta {
 	padding: 6em 4em 5.6em;
