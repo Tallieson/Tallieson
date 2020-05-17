@@ -34,8 +34,8 @@ body {
 	border-radius: 50%;
 }
 .profile-photo {
-	width: 250px;
-    height: 250px;
+	width: 275px;
+    height: 275px;
 	margin: 0 auto;
 	display:block;
     border-radius: 50%;
@@ -43,6 +43,7 @@ body {
     margin-top: -20vh;
 	margin-bottom: 40px;
 	z-index: 3;
+	background-image: url(assets/images/profile.JPG);
 }
 .my-button {
 	font-size: 1em;
@@ -147,13 +148,12 @@ body {
 .cta .cta-button:hover, .cta .cta-button:focus {
 	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 14px 1px rgba(0, 0, 0, 0.15);
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	color: #333;
 }
 .badgescard span {
 	font-size: 2.4em !important;
 	background:linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	color: #333;
-    margin: 0 6px;
+    margin: 0;
 	opacity: 0.8;
 }
 .badgescard span:hover{
@@ -275,29 +275,9 @@ body {
 		color: #fff;
 }
 
-/*** teaching ***/
-#teaching {
-	padding: 6em 4em 3em;
-}
-
-#teaching h2 {
-	color: #595959;
-}
-
-#teaching .tag-line {
-	color: #848282;
-	font-size: 1.4em;
-}
-
-#teaching .teaching-domains {
-	height: 500px;
-	width: auto;
-	margin-top: -4em;
-}
-
 /*** Footer Call-to-action ***/
 #footer-cta {
-	background-color: rgba(255, 103, 68, 0.91);
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	padding: 6em 4em 5.6em;
 }
 
@@ -322,7 +302,6 @@ body {
 }
 
 #footer-cta a:hover {
-	background: #fff;
 	color: rgba(255, 103, 68, 0.91);
 	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 14px 1px rgba(0, 0, 0, 0.15);
 }
