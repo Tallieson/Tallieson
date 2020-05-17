@@ -281,12 +281,7 @@ body {
 	text-transform: uppercase;
 	border-radius: 50px;
 	background: #f2f2f2;
-	margin-bottom: 3vh;
 	text-align: center;
-	margin-top: 3vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	width: 10vw;
 }
 
