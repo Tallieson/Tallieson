@@ -152,7 +152,7 @@ body {
 .badgescard span {
 	font-size: 2.4em !important;
 	background:linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	color: #333;
+	color: #f2f2f2;
     margin: 0;
 	opacity: 0.8;
 }
@@ -277,7 +277,6 @@ body {
 
 /*** Footer Call-to-action ***/
 #footer-cta {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	padding: 6em 4em 5.6em;
 }
 
@@ -304,6 +303,19 @@ body {
 #footer-cta a:hover {
 	color: rgba(255, 103, 68, 0.91);
 	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 14px 1px rgba(0, 0, 0, 0.15);
+}
+
+.cta .cta-button {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	text-transform: uppercase;
+	border-radius: 50px;
+	background: #f2f2f2;
+	margin-bottom: 3vh;
+}
+
+.cta .cta-button:hover, .cta .cta-button:focus {
+	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 14px 1px rgba(0, 0, 0, 0.15);
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 }
 
 /*** footer starts ***/
