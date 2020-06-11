@@ -156,7 +156,6 @@ body {
 	color: #333;
 	margin: 0px;
 	padding: 1px;
-	opacity: 0.8;
 }
 .badgescard span:hover{
 	font-size: 2.6em !important;
@@ -169,7 +168,7 @@ body {
     border-radius: 3px;
     z-index: 3;
 	position: fixed;
-	animation: animabadgedrop 0.5s cubic-bezier(0.225, 1.04, 0.47, 1.105) 0.25s forwards;
+	animation: animabadgedrop .65s cubic-bezier(0.225, 1.7, 0.45, 1.105) forwards;
 	
 }
 @keyframes animabadgedrop {
@@ -205,9 +204,17 @@ body {
 	color: #fff;
 }
 
+#experience #logo {
+	background-color: rgba(255, 103, 68, 0.91);
+	border-radius: 50%;
+	color: #fff;
+	padding: .3em;
+	display: inline;
+}
+
 .experience-topics p {
 	color: #ACAEB2;
-	/*font-weight: 500;*/
+
 }
 
 .experience-topics ul li {
