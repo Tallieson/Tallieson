@@ -150,23 +150,23 @@ body {
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	color: #f2f2f2;
 }
-.badgescard span {
-	font-size: 2.3em !important;
+.contact{
+	font-size: 3.3em !important;
 	background:linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	color: #333;
 	margin: 0px;
 	padding: 1px;
 }
-.badgescard span:hover{
-	font-size: 2.6em !important;
+.contact:hover{
+	font-size: 4em !important;
 	transition: all 0.25s ease;
 	color:#8A8A8B;
 	cursor: pointer;
 	background: #f2f2f2;
+	z-index: 1;
 }
 .badgescard {
     border-radius: 3px;
-    z-index: 3;
 	position: fixed;
 	animation: animabadgedrop .65s cubic-bezier(0.225, 1.7, 0.45, 1.105) forwards;
 	
